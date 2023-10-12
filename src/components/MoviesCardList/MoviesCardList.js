@@ -1,18 +1,18 @@
 import React from 'react';
 import MoviesCard from '../MoviesCard/MoviesCard';
 import './MoviesCardList.css'
-import pathDesign from '/Users/kseniaterekhova/dev/movies-explorer-frontend/src/images/33design.jpg'
-import pathHundred from '/Users/kseniaterekhova/dev/movies-explorer-frontend/src/images/100yearsdesign.jpg'
-import pathBanksy from '/Users/kseniaterekhova/dev/movies-explorer-frontend/src/images/Banksy.jpg'
-import pathBooksellers from '/Users/kseniaterekhova/dev/movies-explorer-frontend/src/images/booksellers.jpg'
-import pathExplotion from '/Users/kseniaterekhova/dev/movies-explorer-frontend/src/images/realityexplotion.jpg'
-import pathFreedomrun from '/Users/kseniaterekhova/dev/movies-explorer-frontend/src/images/runfreedom.jpg'
-import pathGermany from '/Users/kseniaterekhova/dev/movies-explorer-frontend/src/images/germanynight.jpg'
-import pathGimeDanger from '/Users/kseniaterekhova/dev/movies-explorer-frontend/src/images/gimmedanger.jpg'
-import pathJenis from '/Users/kseniaterekhova/dev/movies-explorer-frontend/src/images/jenis.jpg'
-import pathJump from '/Users/kseniaterekhova/dev/movies-explorer-frontend/src/images/jump.jpg'
-import pathHarvi from '/Users/kseniaterekhova/dev/movies-explorer-frontend/src/images/Harvi.jpg'
-import pathWaves from '/Users/kseniaterekhova/dev/movies-explorer-frontend/src/images/waves.jpg'
+import pathDesign from '../../images/33design.jpg'
+import pathHundred from '../../images/100yearsdesign.jpg'
+import pathBanksy from '../../images/Banksy.jpg'
+import pathBooksellers from '../../images/booksellers.jpg'
+import pathExplotion from '../../images/realityexplotion.jpg'
+import pathFreedomrun from '../../images/runfreedom.jpg'
+import pathGermany from '../../images/germanynight.jpg'
+import pathGimeDanger from '../../images/gimmedanger.jpg'
+import pathJenis from '../../images/jenis.jpg'
+import pathJump from '../../images/jump.jpg'
+import pathHarvi from '../../images/Harvi.jpg'
+import pathWaves from '../../images/waves.jpg'
 
 const MoviesCardList = ({isSaved}) => {
     if (!isSaved) {
