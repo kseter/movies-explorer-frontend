@@ -1,0 +1,182 @@
+.about {
+    display: flex;
+    max-width: 90%;
+    flex-direction: column;
+    margin: auto;
+}
+
+.about__title {
+    color: white;
+    font-size: 22px;
+    border-bottom: 1px solid #DADADA;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-weight: 400;
+    margin: 130px 0 0;
+    padding-bottom: 23px;
+}
+
+.about__article-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 70px auto 0;
+}
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.about__content-title {
+    color: white;
+    font-size: 20px;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-weight: 400;
+    margin: 0 0 26px 0;
+}
+
+.about__content-text {
+    color: white;
+    font-size: 14px;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.about__timeline {
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: 228px auto;
+    grid-template-rows: 36px 36px;
+    align-items: center;
+    margin: 110px 0;
+}
+
+.about__first-week {
+    background-color: #3DDC84;
+    text-align: center;
+    height: 100%;
+}
+
+.about__four-weeks {
+    background-color: #303030;
+    text-align: center;
+    height: 100%;
+}
+
+.about__weeks-text {
+    color: black;
+    font-size: 14px;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    line-height: 36px;
+}
+
+.about__weeks-text_white {
+    color: white
+}
+
+.about__weeks-description {
+    color: #8B8B8B;
+    font-size: 14px;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin: 14px 0 0;
+}
+
+@media screen and (max-width: 906px) {
+    .about__content-title {
+        margin: 0 0 22px 0;
+    }
+}
+
+@media screen and (max-width: 906px) {
+    .about__timeline {
+        margin-top: 92px;
+        margin-bottom: 121px;
+    }
+}
+
+@media screen and (max-width: 679px) {
+    .about__title {
+        font-size: 18px;
+        margin: 90px 0 0;
+        padding-bottom: 28px;
+    }
+    
+}
+
+
+@media screen and (max-width: 900px) {
+    .about__article-container {
+        grid-template-columns: 350px 350px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .about__article-container {
+        grid-template-columns: 320px 320px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .about__article-container {
+        grid-template-columns: 270px 270px;
+    }
+}
+
+@media screen and (max-width: 594px) {
+    .about__article-container {
+        grid-template-columns: 284px;
+        margin-top: 60px;
+        gap: 56px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .about__content-title {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 594px) {
+    .about__content-title {
+        font-size: 18px;
+        margin: 0 0 16px 0;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .about__content-text {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 594px) {
+    .about__content-text {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 679px) {
+    .about__timeline {
+        margin-top: 60px;
+        margin-bottom: 69px;
+        grid-template-columns: 110px auto;
+        grid-template-rows: 35px 35px;
+}
+}
+
+@media screen and (max-width: 679px) {
+    .about__weeks-text {
+        font-size: 11px;
+    }    
+}
+
+@media screen and (max-width: 679px) {
+    .about__weeks-description {
+        font-size: 11px;
+    }    
+}

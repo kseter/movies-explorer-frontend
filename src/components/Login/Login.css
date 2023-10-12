@@ -1,0 +1,149 @@
+.signin {
+    display: flex;
+    flex-direction: column;
+    max-width: 396px;
+    margin: auto;
+}
+
+.signin__logo {
+    margin: 70px 0 40px;
+    width: 38px;
+    height: 38px;
+}
+
+.signin__title {
+    color: white;
+    font-size: 24px;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-weight: 500;
+}
+
+.signin__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signin__label {
+    color: #8B8B8B;
+    font-size: 10px;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-weight: 400;
+    margin: 20px 0 10px;
+}
+
+.signin__input {
+    color: white;
+    font-size: 13px;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-weight: 400;
+    background-color: #2F2F2F;
+    border-radius: 8px;
+    height: 46px;
+    border: none;
+}
+
+.signin__submit-btn {
+    background-color: #4285F4;
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 69px;
+    color: white;
+    font-size: 14px;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-weight: 500;
+}
+
+.signin__paragraph-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+.signin__paragraph {
+    font-size: 14px;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-weight: 400;
+    color: #8B8B8B;
+}
+
+.signin__link {
+    font-size: 14px;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-weight: 400;
+    color: #4285F4;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .signin__logo {
+        margin: 232px 0 40px;
+    }    
+}
+
+@media screen and (max-width: 768px) {
+    .signin__title {
+        margin: 0 0 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .signin__logo {
+        margin: 232px 0 40px;
+    }    
+}
+
+@media screen and (max-width: 768px) {
+    .signin__title {
+        margin: 0 0 40px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .signin {
+        align-items: center;
+        justify-content: center;
+        max-width: 260px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .signin__logo {
+        margin: 56px 0 50px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .signin__title {
+        margin: 0 0 70px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .signin__form {
+        min-width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .signin__submit-btn {
+        margin-top: 267px;
+        color: white;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .signin__paragraph {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .signin__link {
+        font-size: 12px;
+    }
+}

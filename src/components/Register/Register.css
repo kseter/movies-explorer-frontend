@@ -1,0 +1,141 @@
+.signup {
+    display: flex;
+    flex-direction: column;
+    max-width: 396px;
+    margin: auto;
+}
+
+.signup__logo {
+    margin: 70px 0 40px;
+    width: 38px;
+    height: 38px;
+}
+
+.signup__title {
+    color: white;
+    font-size: 24px;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-weight: 500;
+    margin: 0;
+}
+
+.signup__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup__label {
+    color: #8B8B8B;
+    font-size: 10px;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-weight: 400;
+    margin: 20px 0 10px;
+}
+
+.signup__input {
+    color: white;
+    font-size: 13px;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-weight: 400;
+    background-color: #2F2F2F;
+    border-radius: 8px;
+    height: 46px;
+    border: none; 
+    padding: 0 0 0 15px;
+
+}
+
+.signup__submit-btn {
+    background-color: #4285F4;
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 69px;
+    color: white;
+    font-size: 14px;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-weight: 500;
+    padding: 0;
+}
+
+.signup__paragraph-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+.signup__paragraph {
+    font-size: 14px;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-weight: 400;
+    color: #8B8B8B;
+}
+
+.signup__link {
+    font-size: 14px;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-weight: 400;
+    color: #4285F4;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .signup__logo {
+        margin: 232px 0 40px;
+    }    
+}
+
+@media screen and (max-width: 768px) {
+    .signup__title {
+        margin: 0 0 40px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .signup {
+        align-items: center;
+        justify-content: center;
+        max-width: 260px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .signup__logo {
+        margin: 56px 0 50px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .signup__title {
+        margin: 0 0 70px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .signup__form {
+        min-width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .signup__submit-btn {
+        margin-top: 157px;
+        color: white;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .signup__paragraph {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .signup__link {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,60 @@
+.unauth-header {
+    max-width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 21px 0 ;
+}
+
+.unauth-header__btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.unauth-header__logo {
+    width: 38px;
+    height: 38px;
+}
+
+.unauth-header__reg-btn { 
+    width: 77px;
+    height: 32px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-size: 12px;
+    padding: 0;
+}
+
+.unauth-header__login-btn{
+    width: 77px;
+    height: 32px;
+    background-color: #3DDC84;
+    color: black;
+    border: none;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-size: 12px;
+    border-radius: 3%;
+    padding: 0;
+}
+
+@media screen and (max-width: 450px) {
+    .unauth-header__reg-btn { 
+        width: 64px;
+        height: 16px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .unauth-header__login-btn{
+        width: 54px;
+        height: 26px;
+        font-size: 10px;
+    }
+}
+

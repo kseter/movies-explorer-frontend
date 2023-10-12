@@ -1,0 +1,33 @@
+.movies__btn-container {
+    margin: 50px auto 80px;
+    min-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.movies__more-btn {
+    width: 320px;
+    height: 36px;
+    background-color: transparent;
+    color: white;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    border: 1px solid #424242;
+    border-radius: 6px;
+    padding: 0;
+}
+
+@media screen and (max-width: 320px) {
+	.movies__btn-container {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 365px) {
+	.movies__more-btn {
+        width: 240px;
+        height: 36px;
+    }
+}
