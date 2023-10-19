@@ -3,8 +3,8 @@ import './Profile.css'
 
 const Profile = ({name, email}) => {
     return (
-        <section className='profile'>
-            <h2 className='profile__title'>Привет, {name}</h2>
+        <main className='profile'>
+            <h1 className='profile__title'>Привет, {name}!</h1>
             <div className='profile__info'>
                 <div className='profile__info-container'>
                         <p className='profile__info-title'>Имя</p>
@@ -16,8 +16,8 @@ const Profile = ({name, email}) => {
                 </div>
             </div>
             <button type='button' className='profile__update-btn'>Редактировать</button>
-            <button type='button' className='profile__logout-btn'>Выйти из аккаунта</button>
-        </section>
+            <a href='/signin' type='button' className='profile__logout-btn'>Выйти из аккаунта</a>
+        </main>
     );
 };
 

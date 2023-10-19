@@ -8,8 +8,8 @@ const Footer = () => {
                 <div className='footer__container'>
                 <p className='footer__year'>© 2020</p>
                 <div className='footer__links'>
-                <a className='footer__link' href='https://practicum.yandex.ru/'>Яндекс.Практикум</a>
-                <a className='footer__link' href='https://github.com/kseter'>Github</a>
+                <a className='footer__link' href='https://practicum.yandex.ru/' target='_blank' rel='noreferrer'>Яндекс.Практикум</a>
+                <a className='footer__link' href='https://github.com/kseter' target='_blank' rel='noreferrer'>Github</a>
                 </div>
                 </div>
             </footer>

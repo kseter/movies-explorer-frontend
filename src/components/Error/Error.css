@@ -12,6 +12,7 @@
     font-family: 'Inter', 'Arial', sans-serif;
     font-weight: 400;
     text-decoration: none;
+    margin-bottom: 200px;
 }
 
 .error__title {
@@ -19,7 +20,7 @@
     font-size: 140px;
     font-family: 'Inter', 'Arial', sans-serif;
     font-weight: 400;
-    margin: 246px 0 0;
+    margin: 250px 0 0;
 }
 
 .error__text {
@@ -27,39 +28,48 @@
     font-size: 16px;
     font-family: 'Inter', 'Arial', sans-serif;
     font-weight: 400;
-    margin: 5px 0 140px;
-}
-
-@media screen and (max-width: 768px) {
-    .error__title {
-        margin: 408px 0 0;
-    }
+    margin: 10px 0 185px;
 }
 
 @media screen and (max-width: 768px) {
     .error__text {
         margin-bottom: 184px;
-        font-size: 12px;
+        margin-top: 12px;
+        font-size: 16px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .error__title {
-        margin: 408px 0 0;
+        margin: 411px 0 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .error__title {
+        margin: 411px 0 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .error__link {
+        margin-bottom: 222px;
     }
 }
 
 @media screen and (max-width: 320px) {
     .error__title {
-        margin-top: 329px;
         font-size: 80px;
+        margin-top: 332px;
     }
 }
 
+
 @media screen and (max-width: 320px) {
     .error__text {
-        margin-top: 5px;
+        margin-top: 13px;
         margin-bottom: 284px;
+        font-size: 12px;
     }
 }
 

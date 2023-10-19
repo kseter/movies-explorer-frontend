@@ -1,20 +1,33 @@
-.navtab-btn {
-    width: 96px;
-    height: 36px;
-    border-radius: 10px;
+.navtab {
+    min-width: 100%;
     background-color: #303030;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navtab-btn {
     color: white;
     font-size: 12px;
     border-color: transparent;
     font-family: 'Inter', 'Arial', sans-serif;
     font-weight: 400;
+    border: none;
+    text-decoration: none;
+    line-height: 16px;
 }
+
 
 @media screen and (max-width: 379px) {
     .navtab-btn {
-        width: 82px;
-        height: 26px;
         font-size: 10px;
-        line-height: 16px;
+        border-radius: 6px;
+	}
+}
+
+@media screen and (max-width: 379px) {
+    .navtab {
+        border-radius: 6px;
 	}
 }

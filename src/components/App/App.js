@@ -9,6 +9,7 @@ import MainRoutes from '../MainRoutes/MainRoutes.js';
 function App() {
   return (
     <div className="App">
+      <div className='App__container'>
       <Routes>
         <Route 
           path='/signup'
@@ -19,6 +20,7 @@ function App() {
           element={<Error />}/>
       </Routes>
       <MainRoutes />
+      </div>
     </div>
   );
 }

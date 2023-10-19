@@ -16,11 +16,13 @@
     font-size: 24px;
     font-family: 'Inter', 'Arial', sans-serif;
     font-weight: 500;
+    margin: 0;
 }
 
 .signin__form {
     display: flex;
     flex-direction: column;
+    margin-top: 22px;
 }
 
 .signin__label {
@@ -40,6 +42,7 @@
     border-radius: 8px;
     height: 46px;
     border: none;
+    padding: 0 0 0 15px;
 }
 
 .signin__submit-btn {
@@ -48,7 +51,7 @@
     height: 45px;
     border: none;
     border-radius: 3px;
-    margin-top: 69px;
+    margin-top: 176px;
     color: white;
     font-size: 14px;
     font-family: 'Inter', 'Arial', sans-serif;
@@ -60,7 +63,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-bottom: 200px;
+    margin-bottom: 240px;
 }
 
 .signin__paragraph {
@@ -68,6 +71,7 @@
     font-family: 'Inter', 'Arial', sans-serif;
     font-weight: 400;
     color: #8B8B8B;
+    margin: 16px 0 0 0;
 }
 
 .signin__link {
@@ -76,6 +80,7 @@
     font-weight: 400;
     color: #4285F4;
     text-decoration: none;
+    margin: 16px 0 0 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -86,7 +91,7 @@
 
 @media screen and (max-width: 768px) {
     .signin__title {
-        margin: 0 0 40px;
+        margin: 0;
     }
 }
 
@@ -96,13 +101,7 @@
     }    
 }
 
-@media screen and (max-width: 768px) {
-    .signin__title {
-        margin: 0 0 40px;
-    }
-}
-
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 460px) {
     .signin {
         align-items: center;
         justify-content: center;
@@ -110,40 +109,42 @@
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 460px) {
     .signin__logo {
         margin: 56px 0 50px;
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 460px) {
     .signin__title {
-        margin: 0 0 70px;
+        margin: 0 0 40px;
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 460px) {
     .signin__form {
         min-width: 100%;
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 460px) {
     .signin__submit-btn {
-        margin-top: 267px;
+        margin-top: 264px;
         color: white;
         font-size: 12px;
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 460px) {
     .signin__paragraph {
         font-size: 12px;
+        margin-top: 14px;
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 460px) {
     .signin__link {
         font-size: 12px;
+        margin-top: 14px;
     }
 }

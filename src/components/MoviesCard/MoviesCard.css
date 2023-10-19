@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     margin: auto;
+    min-width: 100%;
 }
 
 .card__pic-container {
@@ -19,18 +20,23 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 14px auto 0;
+    align-items: center;
     gap: 30px;
     max-width: 100%;
+    min-height: 49px;
+    margin: 0 14px 0;
 }
 
 .card__name {
+    display: flex;
     font-family: 'Inter', 'Arial', sans-serif;
     font-weight: 500;
     font-size: 13px;
     color: white;
     margin: 0;
     min-width: 250px;
+    min-height: 32px;
+    align-items: center;
 }
 
 .card__info-container {
@@ -128,7 +134,27 @@
     }
 }
 
-@media screen and (max-width: 705px) {
+@media screen and (max-width: 850px) {
+    .card__container {
+        margin: 16px auto 0;
+        gap: 8px;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card__container {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .card__pic-container  {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
     .card__pic-container  {
         max-width: 270px;
     }
@@ -150,11 +176,10 @@
     }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 768px) {
     .card__container {
-        margin: 16px auto 0;
-        gap: 8px;
-        max-width: 100%;
+        align-items: end;
+        gap: 0px;
     }
 }
 
@@ -178,16 +203,45 @@
     }
 }
 
-@media screen and (max-width: 705px) {
-    .card__name  {
-        font-size: 10px;
-        min-width: 90%;
+@media screen and (max-width: 768px) {
+    .card__name {
+        font-size: 13px;
+        min-width: 250px;
     }
 }
+
+
+@media screen and (max-width: 767px) {
+    .card__name  {
+        font-size: 10px;
+        min-width: 50%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .card__name  {
+        font-size: 12px;
+        min-width: 240px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card__info-container {
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .card__info-container {
+        margin-bottom: 0;
+    }
+}
+
 
 @media screen and (max-width: 651px) {
     .card__container {
         font-size: 12px;
         min-width: 240px;
+        align-items: center;
     }
 }

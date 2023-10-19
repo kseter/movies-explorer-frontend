@@ -2,8 +2,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 13px;
-    margin-bottom: 10px;
+    gap: 2px;
+    margin: 0 auto 10px;
+    max-width: 89%;
 }
 
 .checkbox__input-invisible {
@@ -22,6 +23,7 @@
     border-radius: 30px;
     cursor: pointer;
     background-color: #343434;
+    margin: 0 10px 1px 0;
 }
 .checkbox__input-invisible:checked+.checkbox__input-visible {
     background-color: #2BE080;
@@ -71,5 +73,6 @@
 @media screen and (max-width: 320px) {
     .checkbox__name  {
         font-size: 11px;
+        padding-left: 2px;
     }
 }

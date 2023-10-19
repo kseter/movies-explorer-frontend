@@ -1,10 +1,10 @@
 .unauth-header {
-    max-width: 85%;
-    margin: auto;
+    max-width: 89%;
+    margin:  0 auto 35px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 21px 0 ;
+    padding: 19px 0 0;
 }
 
 .unauth-header__btn-container {
@@ -21,40 +21,70 @@
 
 .unauth-header__reg-btn { 
     width: 77px;
-    height: 32px;
     background-color: transparent;
     color: white;
     border: none;
     font-family: 'Inter', 'Arial', sans-serif;
     font-size: 12px;
     padding: 0;
+    text-decoration: none;
+    text-align: center;
+    line-height: 16px;
+    padding: 8px 0;
 }
 
 .unauth-header__login-btn{
     width: 77px;
-    height: 32px;
     background-color: #3DDC84;
     color: black;
     border: none;
     font-family: 'Inter', 'Arial', sans-serif;
     font-size: 12px;
     border-radius: 3%;
-    padding: 0;
+    text-decoration: none;
+    text-align: center;
+    line-height: 16px;
+    padding: 8px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .unauth-header {
+        max-width: 710px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .unauth-header {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .unauth-header {
+        max-width: 292px;
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .unauth-header__btn-container {
+        gap: 14px;
+    }
 }
 
 @media screen and (max-width: 450px) {
     .unauth-header__reg-btn { 
         width: 64px;
-        height: 16px;
         font-size: 10px;
+        padding: 5px 0;
     }
 }
 
 @media screen and (max-width: 450px) {
     .unauth-header__login-btn{
         width: 54px;
-        height: 26px;
         font-size: 10px;
+        padding: 5px 0;
     }
 }
 

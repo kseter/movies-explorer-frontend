@@ -1,9 +1,9 @@
 .footer {
     display: flex;
     flex-direction: column;
-    max-width: 95%;
-    margin: 79px auto 0;
-    padding: 0 0 10px;
+    max-width: 1140px;
+    margin: 62px auto 0;
+    padding: 0 0 20px;
 }
 
 .footer__text {
@@ -20,8 +20,8 @@
 
 .footer__container {
     display: flex;
-    justify-content: space-between;
     margin-top: 20px;
+    justify-content: space-between;
 }
 
 .footer__year {
@@ -47,13 +47,51 @@
     text-decoration: none;
 }
 
+@media screen and (max-width: 1278px) {
+    .footer {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        max-width: 710px;
+        margin-top: 59px;
+    }
+}
+
+@media screen and (max-width: 766px) {
+    .footer {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .footer {
+        max-width: 298px;
+        padding-bottom: 23px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer__container {
+        gap: 481px;
+    }
+}
+
+@media screen and (max-width: 766px) {
+    .footer__container {
+        gap: 50px;
+    }
+}
+
 @media screen and (max-width: 320px) {
     .footer__container {
         flex-direction: column-reverse;
         margin-top: 20px;
         align-items: center;
         justify-content: center;
-        gap: 30px;
+        gap: 31px;
     }
 }
 
@@ -63,7 +101,7 @@
         align-items: center;
         justify-content: center;
         margin-top: 10px;
-        gap: 12px;
+        gap: 14px;
     }
 }
 
@@ -77,5 +115,12 @@
     .footer__year {
         color: #8B8B8B;
         font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .footer__text {
+        font-size: 12px;
+        padding-bottom: 22px;
     }
 }

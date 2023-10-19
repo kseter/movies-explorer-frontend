@@ -6,15 +6,15 @@ import SearchForm from '../SearchForm/SearchForm';
 
 const Movies = () => {
     return (
-        <div>
+        <main className='movies-page'>
             <SearchForm />
             <FilterCheckbox />
             <MoviesCardList 
             isSaved={false}/>
-            <div className='movies__btn-container'>
-                <button className='movies__more-btn'>Еще</button>
+            <div className='movies-page__btn-container'>
+                <button type='button' className='movies-page__more-btn'>Еще</button>
             </div>
-        </div>
+        </main>
     );
 };
 

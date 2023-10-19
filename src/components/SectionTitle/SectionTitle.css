@@ -1,4 +1,4 @@
-.section-title {
+.section-title__name {
     color: white;
     font-size: 22px;
     border-bottom: 1px solid #DADADA;
@@ -6,17 +6,19 @@
     font-weight: 400;
     margin: 110px 0 0;
     padding-bottom: 23px;
+    letter-spacing: -1px;
 }
 
 @media screen and (max-width: 768px) {
-    .section-title  {
-		margin-top: 90px;
+    .section-title__name  {
+		margin-top: 92px;
 	}
 }
 
 @media screen and (max-width: 320px) {
-    .section-title  {
-		margin-top: 70px;
+    .section-title__name  {
+		margin-top: 73px;
+        padding-bottom: 27px;
         font-size: 18px;
 	}
 }

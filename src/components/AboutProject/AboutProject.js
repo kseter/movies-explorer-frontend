@@ -4,7 +4,7 @@ import './AboutProject.css'
 class AboutProject extends Component {
     render() {
         return (
-            <section className='about' aria-label="">
+            <section id='project' className='about' aria-label="">
                 <h2 className='about__title'>О проекте</h2>
                 <div className='about__article-container'>
                     <article className='about__content'>

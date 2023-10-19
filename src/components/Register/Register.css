@@ -22,6 +22,7 @@
 .signup__form {
     display: flex;
     flex-direction: column;
+    margin-top: 23px;
 }
 
 .signup__label {
@@ -42,7 +43,6 @@
     height: 46px;
     border: none; 
     padding: 0 0 0 15px;
-
 }
 
 .signup__submit-btn {
@@ -51,7 +51,7 @@
     height: 45px;
     border: none;
     border-radius: 3px;
-    margin-top: 69px;
+    margin-top: 90px;
     color: white;
     font-size: 14px;
     font-family: 'Inter', 'Arial', sans-serif;
@@ -64,7 +64,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-bottom: 200px;
+    margin-bottom: 240px;
 }
 
 .signup__paragraph {
@@ -72,6 +72,7 @@
     font-family: 'Inter', 'Arial', sans-serif;
     font-weight: 400;
     color: #8B8B8B;
+    margin: 18px 0 0 0;
 }
 
 .signup__link {
@@ -80,6 +81,7 @@
     font-weight: 400;
     color: #4285F4;
     text-decoration: none;
+    margin: 18px 0 0 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -90,7 +92,7 @@
 
 @media screen and (max-width: 768px) {
     .signup__title {
-        margin: 0 0 40px;
+        margin: 0 0 0px;
     }
 }
 
@@ -110,7 +112,7 @@
 
 @media screen and (max-width: 450px) {
     .signup__title {
-        margin: 0 0 70px;
+        margin: 0 0 40px;
     }
 }
 
@@ -122,7 +124,7 @@
 
 @media screen and (max-width: 450px) {
     .signup__submit-btn {
-        margin-top: 157px;
+        margin-top: 180px;
         color: white;
         font-size: 12px;
     }
@@ -131,11 +133,13 @@
 @media screen and (max-width: 450px) {
     .signup__paragraph {
         font-size: 12px;
+        margin-top: 14px;
     }
 }
 
 @media screen and (max-width: 450px) {
     .signup__link {
         font-size: 12px;
+        margin-top: 14px;
     }
 }

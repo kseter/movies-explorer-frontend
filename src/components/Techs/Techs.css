@@ -11,12 +11,13 @@
     border-bottom: 1px solid #DADADA;
     font-family: 'Inter', 'Arial', sans-serif;
     font-weight: 400;
-    margin: 110px 0 0;
-    padding-bottom: 23px;
+    margin: 97px 0 0;
+    padding-bottom: 24px;
+    letter-spacing: -1px;
 }
 
 .techs__section-container{
-    min-width: 90%;
+    min-width: 89%;
     margin: auto;
 }
 
@@ -33,18 +34,21 @@
     line-height: 58px;
     font-family: 'Inter', 'Arial', sans-serif;
     font-weight: 400;
-    margin: 90px auto 26px;
+    margin: 90px auto 27px;
+    letter-spacing: -2px;
 }
 
 .techs__content-text {
     color: white;
     font-size: 14px;
+    line-height: 20px;
     font-family: 'Inter', 'Arial', sans-serif;
     font-weight: 400;
     margin: 0;
     padding: 0;
     max-width: 460px;
     text-align: center;
+    letter-spacing: -0.5px;
 }
 
 .techs__content-tab-container {
@@ -52,6 +56,8 @@
     flex-direction: row;
     margin: 100px 0;
     gap: 10px;
+    list-style: none;
+    padding: 0;
 }
 
 .techs__content-tab {
@@ -71,9 +77,22 @@
     margin: 0;
 }
 
+
 @media screen and (max-width: 768px) {
     .techs__content-title {
         margin: 80px 0 22px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .techs__section-container{
+        min-width: 668px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .techs__section-container{
+        min-width: 90%;
     }
 }
 
@@ -113,11 +132,17 @@
 
 @media screen and (max-width: 768px) {
     .techs__section-title {
-        margin-top: 90px;
+        margin-top: 92px;
     }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 768px) {
+    .techs__content-tab-text {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 767px) {
     .techs {
         background-color: #202020;
         max-width: 90%;
@@ -127,7 +152,7 @@
 @media screen and (max-width: 320px) {
     .techs {
         background-color: #202020;
-        max-width: 292px;
+        max-width: 284px;
     }
 }
 
@@ -135,8 +160,9 @@
     .techs__content-title {
         font-size: 30px;
         max-width: 100%;
-        margin-top: 60px;
-        margin-bottom: 24px;
+        margin-top: 50px;
+        margin-bottom: 12px;
+        letter-spacing: -1.2px;
     }
 }
 
@@ -160,13 +186,16 @@
     .techs__content-text {
         font-size: 11px;
         max-width: 100%;
+        line-height: 16px;
     }
 }
 
 @media screen and (max-width: 320px) {
     .techs__section-title {
-        margin-top: 70px;
+        margin-top: 61px;
         font-size: 18px;
         border-bottom: 1px solid black;
+        letter-spacing: -0.8px;
+        padding-bottom: 27px;
     }
 }

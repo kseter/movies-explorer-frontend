@@ -6,13 +6,14 @@ import './SavedMovies.css'
 
 const SavedMovies = () => {
     return (
-        <div className='saved-movies'>
-            <SearchForm />
+        <main className='saved-movies'>
+            <SearchForm 
+            savedMovies={true}/> 
             <FilterCheckbox />
             <MoviesCardList 
             isSaved={true}/>
             <div className='saved-movies__divider'></div>
-        </div>
+        </main>
     );
 };
 

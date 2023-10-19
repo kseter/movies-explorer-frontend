@@ -4,14 +4,23 @@ import './Navigation.css'
 
 const Navigation = () => {
         return (
-            <nav className='nav'>
-                <NavTab 
-                name='О проекте'/> 
-                <NavTab
-                name='Технологии'/>
-                <NavTab
-                name='Студент'/>
-            </nav>
+            <ul className='nav'>
+                <li className='nav__item'>
+                    <NavTab 
+                    name='О проекте'
+                    link='#project'/> 
+                </li>
+                <li className='nav__item'>
+                    <NavTab
+                    name='Технологии'
+                    link='#techs'/>
+                </li>
+                <li className='nav__item'>
+                    <NavTab
+                    name='Студент'
+                    link='#about-me'/>
+                </li>
+            </ul>
         );
     }
 

@@ -7,8 +7,8 @@ const UnAuthHeader = () => {
         <div className='unauth-header'>
             <img src={logoPath} alt='Logo' className='unauth-header__logo'/>
             <div className='unauth-header__btn-container'>
-                <button className='unauth-header__reg-btn'>Регистрация</button>
-                <button className='unauth-header__login-btn'>Войти</button>
+                <a className='unauth-header__reg-btn' href='/signup'>Регистрация</a>
+                <a href='/signin' className='unauth-header__login-btn'>Войти</a>
             </div>
         </div>
     );
