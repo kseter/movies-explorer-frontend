@@ -11,6 +11,10 @@
     height: 38px;
 }
 
+.signin__logo-link {
+    text-decoration: none;
+}
+
 .signin__title {
     color: white;
     font-size: 24px;
@@ -63,7 +67,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-bottom: 240px;
+    margin-bottom: 400px;
 }
 
 .signin__paragraph {

@@ -11,6 +11,10 @@
     height: 38px;
 }
 
+.signup__logo-link {
+        text-decoration: none;
+}
+
 .signup__title {
     color: white;
     font-size: 24px;
@@ -64,7 +68,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-bottom: 240px;
+    margin-bottom: 400px;
 }
 
 .signup__paragraph {

@@ -25,7 +25,6 @@ const MainRoutes = () => {
                     name='Виталий'
                     email='pochta@yandex.ru'/>}/>
                 </Routes> 
-                <Footer />
         </div>
     );
 };

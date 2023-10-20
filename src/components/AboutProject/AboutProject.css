@@ -151,6 +151,12 @@
     }
 }
 
+@media screen and (max-width: 651px) {
+    .about__content-title {
+        font-size: 14px;
+    }
+}
+
 @media screen and (max-width: 594px) {
     .about__content-title {
         font-size: 18px;
@@ -184,6 +190,12 @@
 @media screen and (max-width: 750px) {
     .about__article-container {
         grid-template-columns: 270px 270px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .about__article-container {
+        grid-template-columns: 250px 250px;
     }
 }
 

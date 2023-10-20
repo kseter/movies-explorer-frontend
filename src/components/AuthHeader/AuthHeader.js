@@ -5,7 +5,7 @@ import './AuthHeader.css';
 const AuthHeader = () => {
     return (
         <div className='auth-header'>
-            <a href='/' className='auth-header__logo-link'><img src={logoPath} alt='Logo' className='auth-header__logo'/></a>
+            <img src={logoPath} alt='Logo' className='auth-header__logo'/>
                 <div className='auth-header__links'>
                     <a href='/movies' className='auth-header__link'>Фильмы</a>
                     <a href='/saved-movies' className='auth-header__link'>Сохраненные фильмы</a>

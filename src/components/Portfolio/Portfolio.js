@@ -12,11 +12,11 @@ const Portfolio = () => {
                     src={pathIconPortfolio} alt='Иконка стрелка' 
                     className='portfolio__icon'></img></a></li>
                     <li className='portfolio__list-item'><a className='portfolio__link' 
-                    href='https://kseter.github.io/how-to-learn-new/' target='_blank' rel='noreferrer'>Адаптивный сайт <img 
+                    href='https://kseter.github.io/russian-travel/' target='_blank' rel='noreferrer'>Адаптивный сайт <img 
                     src={pathIconPortfolio} alt='Иконка стрелка' 
                     className='portfolio__icon'></img></a></li>
                     <li className='portfolio__list-item'><a className='portfolio__link' 
-                    href='https://kseter.github.io/how-to-learn-new/' target='_blank' rel='noreferrer'>Одностраничное приложение <img 
+                    href='https://kseter.github.io/mesto/' target='_blank' rel='noreferrer'>Одностраничное приложение <img 
                     src={pathIconPortfolio} alt='Иконка стрелка' 
                     className='portfolio__icon'></img></a></li>
                 </ul>

@@ -12,7 +12,9 @@
 }
 
 .movies__list_saved {
-    margin-top: 117px;
+    margin-top: 35px;
+    border-top: 1px solid #424242;
+    padding-top: 80px;
 }
 
 @media screen and (max-width: 1250px) {
@@ -33,6 +35,7 @@
 @media screen and (max-width: 767px) {
         .movies__list {
                 max-width: 90%;
+                max-height: 1070px;
 	}
 }
 
@@ -51,6 +54,7 @@
 @media screen and (max-width: 651px) {
 	.movies__list {
                 gap: 21px;
+                max-height: 1180px;
 	}
 }
 
