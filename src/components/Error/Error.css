@@ -15,6 +15,10 @@
     margin-bottom: 400px;
 }
 
+.error__link:hover{
+    opacity: 0.7;
+}
+
 .error__title {
     color: white;
     font-size: 140px;

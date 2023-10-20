@@ -17,6 +17,10 @@
     justify-content: center;
 }
 
+.nav__item:hover{
+    opacity: 0.7;
+}
+
 @media screen and (max-width: 379px) {
     .nav__item {
         border-radius: 6px;

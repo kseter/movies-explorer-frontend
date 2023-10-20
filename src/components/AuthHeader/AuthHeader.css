@@ -13,6 +13,14 @@
     height: 38px;
 }
 
+.auth-header__logo-link {
+    text-decoration: none;
+}
+
+.auth-header__logo-link:hover{
+    opacity: 0.7;
+}
+
 .auth-header__container {
     display: flex;
     flex-direction: row;
@@ -37,6 +45,10 @@
     text-decoration: none;
 }
 
+.auth-header__link:hover {
+    opacity: 0.7;
+}
+
 .auth-header__account-btn {
     width: 100px;
     color: white;
@@ -51,6 +63,10 @@
     text-decoration: none;
     padding: 8px 0;
     text-align: center;
+}
+
+.auth-header__account-btn:hover {
+    opacity: 0.7;
 }
 
 .auth-header__menu {

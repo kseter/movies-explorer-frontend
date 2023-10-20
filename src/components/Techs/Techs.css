@@ -67,6 +67,10 @@
     border-radius: 10px;
 }
 
+.techs__content-tab:hover {
+    opacity: 0.7;
+}
+
 .techs__content-tab-text {
     color: white;
     font-size: 14px;

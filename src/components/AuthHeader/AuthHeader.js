@@ -5,7 +5,8 @@ import './AuthHeader.css';
 const AuthHeader = () => {
     return (
         <div className='auth-header'>
-            <img src={logoPath} alt='Logo' className='auth-header__logo'/>
+            <a href='/' className='auth-header__logo-link'><img src={logoPath} alt='Logo' 
+                className='auth-header__logo'/></a>
                 <div className='auth-header__links'>
                     <a href='/movies' className='auth-header__link'>Фильмы</a>
                     <a href='/saved-movies' className='auth-header__link'>Сохраненные фильмы</a>
@@ -24,7 +25,7 @@ const AuthHeader = () => {
                             <li><a className='auth-header__menu-list-item' href="/">Главная</a></li>
                             <li><a className='auth-header__menu-list-item auth-header__menu-list-item_current' href="/movies">Фильмы</a></li>
                             <li><a className='auth-header__menu-list-item' href="/saved-movies">Сохраненные фильмы</a></li>
-                            <li><a href="/profile"className='auth-header__menu-account-btn'>Аккаунт</a></li>
+                            <li><a href="/profile" className='auth-header__menu-account-btn'>Аккаунт</a></li>
                         </ul>
                         </div>
                 </div>

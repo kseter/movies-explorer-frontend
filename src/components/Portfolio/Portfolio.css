@@ -26,6 +26,10 @@
     align-items: center;
 }
 
+.portfolio__link:hover {
+    opacity: 0.7;
+}
+
 .portfolio__list-item {
     color: white;
     font-size: 30px;

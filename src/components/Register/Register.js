@@ -14,7 +14,7 @@ const Register = () => {
                     <input type='text' className='signup__input' id='username' name='username' value='' 
                     required placeholder='Имя' minLength='2' maxLength='32' readOnly></input>
                     <label className='signup__label'>E-mail</label>
-                    <input type='email' className='signup__input'id='useremail' name='useremail' value='' 
+                    <input type='email' className='signup__input' id='useremail' name='useremail' value='' 
                     required placeholder='Email' readOnly></input>
                     <label className='signup__label'>Пароль</label>
                     <input type='password' className='signup__input' id='userpassword' name='userpassword' 

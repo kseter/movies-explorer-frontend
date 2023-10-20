@@ -5,7 +5,7 @@ import logoPath from '../../images/logo.svg';
 const Login = () => {
     return (
             <main className='signin'>
-                <section>
+                <section className='signin__container'>
                     <a href='/' className='signin__logo-link'><img src={logoPath} alt='Logo' 
                     className='signin__logo'/></a>
                     <h1 className='signin__title'>Рады видеть!</h1>

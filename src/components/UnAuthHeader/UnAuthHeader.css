@@ -33,6 +33,10 @@
     padding: 8px 0;
 }
 
+.unauth-header__reg-btn:hover {
+    opacity: 0.7;
+}
+
 .unauth-header__login-btn{
     width: 77px;
     background-color: #3DDC84;
@@ -45,6 +49,10 @@
     text-align: center;
     line-height: 16px;
     padding: 8px 0;
+}
+
+.unauth-header__login-btn:hover{
+    opacity: 0.7;
 }
 
 @media screen and (max-width: 768px) {

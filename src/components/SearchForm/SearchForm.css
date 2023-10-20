@@ -105,5 +105,11 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .search__form_saved {
+        margin-top: 75px;
+    }
+}
+
 
 
