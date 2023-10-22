@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ae106308.css",
+    "main.js": "/static/js/main.64c38a87.js",
+    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "static/media/Inter-Medium.woff": "/static/media/Inter-Medium.9053572c46aeb4b16caa.woff",
+    "static/media/Inter-Black.woff": "/static/media/Inter-Black.c6938660eec019fefd68.woff",
+    "static/media/Inter-Regular.woff": "/static/media/Inter-Regular.8c206db99195777c6769.woff",
+    "static/media/Inter-Medium.woff2": "/static/media/Inter-Medium.293fd13dbca5a3e450ef.woff2",
+    "static/media/Inter-Black.woff2": "/static/media/Inter-Black.15ca31c0a2a68f76d2d1.woff2",
+    "static/media/Inter-Regular.woff2": "/static/media/Inter-Regular.c8ba52b05a9ef10f4758.woff2",
+    "static/media/avatar.jpg": "/static/media/avatar.6563de557d72a058af46.jpg",
+    "static/media/gimmedanger.jpg": "/static/media/gimmedanger.b1ee9ac35e5bbda5b9d5.jpg",
+    "static/media/jenis.jpg": "/static/media/jenis.16a97bf49e4d751f31d7.jpg",
+    "static/media/runfreedom.jpg": "/static/media/runfreedom.f6f2252ddc253fb4f7c7.jpg",
+    "static/media/booksellers.jpg": "/static/media/booksellers.8a873e693faaaf8d8d73.jpg",
+    "static/media/33design.jpg": "/static/media/33design.4c75c8ee6d7069a63d5f.jpg",
+    "static/media/waves.jpg": "/static/media/waves.7c425ebf303a4137a212.jpg",
+    "static/media/germanynight.jpg": "/static/media/germanynight.1ffe772cf7aea966d1f3.jpg",
+    "static/media/realityexplotion.jpg": "/static/media/realityexplotion.40f05b4c2bc99f8b6052.jpg",
+    "static/media/Banksy.jpg": "/static/media/Banksy.d0857d27b55cf3227f65.jpg",
+    "static/media/jump.jpg": "/static/media/jump.485af5bd1083579d55b9.jpg",
+    "static/media/Harvi.jpg": "/static/media/Harvi.b8232ad9d3773880a51d.jpg",
+    "index.html": "/index.html",
+    "static/media/logo.svg": "/static/media/logo.25a2943c9f92a986c1fa6c2157b97a2f.svg",
+    "static/media/icon__close.svg": "/static/media/icon__close.2075228418885bd84381.svg",
+    "static/media/icon_portfolio.svg": "/static/media/icon_portfolio.21d4a41cbd169bf0c5fe5d37eabf3a01.svg",
+    "static/media/icon__pic_saved.svg": "/static/media/icon__pic_saved.f5c9174edd00bee05b2f.svg",
+    "main.ae106308.css.map": "/static/css/main.ae106308.css.map",
+    "main.64c38a87.js.map": "/static/js/main.64c38a87.js.map",
+    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ae106308.css",
+    "static/js/main.64c38a87.js"
+  ]
+}
