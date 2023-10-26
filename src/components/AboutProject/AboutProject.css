@@ -1,0 +1,244 @@
+.about {
+    display: flex;
+    max-width: 89%;
+    flex-direction: column;
+    margin: auto;
+}
+
+.about__title {
+    color: white;
+    font-size: 22px;
+    border-bottom: 1px solid #DADADA;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-weight: 400;
+    margin: 127px 0 0;
+    padding-bottom: 23px;
+    letter-spacing: -1px;
+}
+
+.about__article-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 40px;
+    margin: 70px auto 0;
+}
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+}
+
+.about__content-title {
+    color: white;
+    font-size: 20px;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-weight: 400;
+    margin: 0 0 26px 0;
+    letter-spacing: -0.8px;
+}
+
+.about__content-text {
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.about__timeline {
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: 228px auto;
+    grid-template-rows: 36px 36px;
+    align-items: center;
+    margin: 110px 0;
+}
+
+.about__first-week {
+    background-color: #3DDC84;
+    text-align: center;
+    height: 100%;
+}
+
+.about__four-weeks {
+    background-color: #303030;
+    text-align: center;
+    height: 100%;
+}
+
+.about__weeks-text {
+    color: black;
+    font-size: 14px;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    line-height: 36px;
+}
+
+.about__weeks-text_white {
+    color: white
+}
+
+.about__weeks-description {
+    color: #8B8B8B;
+    font-size: 14px;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin: 10px 0 0;
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        max-width: 668px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .about {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .about {
+        max-width: 284px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about__title {
+        font-size: 22px;
+        margin: 105px 0 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .about__title {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .about__title {
+        font-size: 18px;
+        margin: 73px 0 0;
+        padding-bottom: 27px;
+        max-width: 284px;
+        letter-spacing: -0.67px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about__content-text {
+        font-size: 12px;
+        line-height: 18px;
+    }    
+}
+
+@media screen and (max-width: 906px) {
+    .about__content-title {
+        margin: 0 0 22px 0;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .about__content-title {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 651px) {
+    .about__content-title {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 594px) {
+    .about__content-title {
+        font-size: 18px;
+        letter-spacing: -0.67px;
+        margin: 0 0 16px 0;
+    }
+}
+
+@media screen and (max-width: 906px) {
+    .about__timeline {
+        margin-top: 93px;
+        margin-bottom: 85px;
+        grid-template-columns: 140px auto;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .about__article-container {
+        margin-top: 71px;
+        grid-template-columns: 350px 350px;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .about__article-container {
+        grid-template-columns: 320px 320px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .about__article-container {
+        grid-template-columns: 270px 270px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .about__article-container {
+        grid-template-columns: 250px 250px;
+    }
+}
+
+@media screen and (max-width: 594px) {
+    .about__article-container {
+        grid-template-columns: 284px;
+        margin-top: 62px;
+        gap: 59px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .about__content-text {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 594px) {
+    .about__content-text {
+        font-size: 11px;
+        line-height: 16px;
+    }
+}
+
+@media screen and (max-width: 679px) {
+    .about__timeline {
+        margin-top: 60px;
+        margin-bottom: 69px;
+        grid-template-columns: 100px auto;
+        grid-template-rows: 35px 35px;
+}
+}
+
+
+@media screen and (max-width: 679px) {
+    .about__weeks-text {
+        font-size: 11px;
+    }    
+}
+
+@media screen and (max-width: 679px) {
+    .about__weeks-description {
+        font-size: 11px;
+        margin-top: 3px;
+    }    
+}

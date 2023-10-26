@@ -1,0 +1,115 @@
+.search__form{
+    display: flex;
+    gap: 11px;
+    justify-content: flex-start;
+    max-width: 89%;
+    margin: 118px auto 29px;
+}
+
+.search__form_saved {
+    display: flex;
+    gap: 11px;
+    justify-content: flex-start;
+    max-width: 89%;
+    margin: 75px auto 29px;
+}
+
+.search__input {
+    min-width: 95%;
+    background-color: #2F2F2F;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    height: 50px;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 0 0 0 15px;
+}
+
+.search__input::placeholder {
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.search__submit-btn {
+    height: 44px;
+    width: 44px;
+    background-image: url('../../images/submit_btn_blue.svg');
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 40px;
+    padding: 0;
+}
+
+@media screen and (max-width: 1180px) {
+    .search__form {
+        min-width: 90%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 29px;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .search__input  {
+        min-width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .search__input  {
+        min-width: 654px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .search__input  {
+        min-width: 90%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .search__input  {
+        min-width: 238px;
+        height: 44px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .search__input::placeholder {
+        padding-left: 13px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .search__form {
+        min-width: 706px;
+        margin-bottom: 41px;
+        margin-top: 76px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .search__form {
+        min-width: 90%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .search__form {
+        min-width: 292px;
+        margin-bottom: 47px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .search__form_saved {
+        margin-top: 75px;
+    }
+}
+
+
+
