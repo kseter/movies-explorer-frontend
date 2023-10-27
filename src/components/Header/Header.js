@@ -4,12 +4,12 @@ import { Route, Routes } from 'react-router-dom'
 import UnAuthHeader from '../UnAuthHeader/UnAuthHeader';
 import AuthHeader from '../AuthHeader/AuthHeader';
 
-const Header = () => {
+const Header = ({loggedIn}) => {
         return (
             <header>
                 <Routes>
                     <Route path='/'
-                    element={<UnAuthHeader /> }/>
+                    element={loggedIn ? <AuthHeader/> : <UnAuthHeader />}/>
                     <Route path='/movies' 
                     element={<AuthHeader/>}/>
                     <Route path='/saved-movies' 

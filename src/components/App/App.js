@@ -141,7 +141,10 @@ function logOut() {
           <div className="App">
             <div className='App__container'>
               {(pathname === '/movies' || pathname === '/saved-movies' || 
-              pathname === '/profile' || pathname === '/') ? <Header /> 
+              pathname === '/profile' || pathname === '/') 
+              ? 
+              <Header 
+              loggedIn={loggedIn}/> 
               : ''
               }
             <Routes>

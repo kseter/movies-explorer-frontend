@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css'
 
 const Footer = () => {
@@ -8,8 +9,8 @@ const Footer = () => {
                 <div className='footer__container'>
                 <p className='footer__year'>© 2020</p>
                 <div className='footer__links'>
-                <a className='footer__link' href='https://practicum.yandex.ru/' target='_blank' rel='noreferrer'>Яндекс.Практикум</a>
-                <a className='footer__link' href='https://github.com/kseter' target='_blank' rel='noreferrer'>Github</a>
+                <Link to='https://practicum.yandex.ru/' className='footer__link' target='_blank' rel='noreferrer'>Яндекс.Практикум</Link>
+                <Link to='https://github.com/kseter' className='footer__link'  target='_blank' rel='noreferrer'>Github</Link>
                 </div>
                 </div>
             </footer>

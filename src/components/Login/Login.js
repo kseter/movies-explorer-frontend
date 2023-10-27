@@ -2,6 +2,7 @@ import React from 'react';
 import './Login.css';
 import logoPath from '../../images/logo.svg';
 import useValidationForm from '../../utils/useValidationForm';
+import { Link } from 'react-router-dom';
 
 const Login = ({ onLogin }) => {
 
@@ -15,8 +16,8 @@ const Login = ({ onLogin }) => {
     return (
             <main className='signin'>
                 <section className='signin__container'>
-                    <a href='/' className='signin__logo-link'><img src={logoPath} alt='Logo' 
-                    className='signin__logo'/></a>
+                    <Link to='/' className='signin__logo-link'><img src={logoPath} alt='Logo' 
+                    className='signin__logo'/></Link>
                     <h1 className='signin__title'>Рады видеть!</h1>
                     <form className='signin__form' onSubmit={handleRegisterSubmit} > 
                         <label className='signin__label'>E-mail</label>
@@ -27,10 +28,12 @@ const Login = ({ onLogin }) => {
                             || isInputValid.useremail ? '' : 'signin__input_invalid'}`}
                         id='useremail' 
                         name='useremail' 
+                        pattern='^[?:[a-zA-Z0-9]+\\.]+@+[a-zA-Z0-9]+.+[A-z]'
                         value={values.useremail ?  values.useremail : ''}
                         required 
                         placeholder='Email'></input>
-                        <span className='signin__error'>{errors.useremail}</span>
+                        <span className='signin__error'>{errors.useremail}
+                        { isInputValid.useremail === undefined || isInputValid.useremail ? '' : ' Email должен быть в формате ivanivanov@mail.com'}</span>
                         <label className='signin__label'>Пароль</label>
                         <input 
                         onChange={handleChange}
@@ -41,8 +44,8 @@ const Login = ({ onLogin }) => {
                         name='userpassword' 
                         value={values.userpassword ?  values.userpassword : ''} 
                         required 
+                        minLength={5}
                         placeholder='Пароль'
-                        minLength={2}
                         ></input>
                         <span className='signin__error'>{errors.userpassword}</span>
                         <button 
@@ -52,7 +55,7 @@ const Login = ({ onLogin }) => {
                     </form>
                     <div className='signin__paragraph-container'>
                         <p className='signin__paragraph'>Еще не зарегистрированы?</p> 
-                        <a href='/signup' className='signin__link'>&nbsp;Регистрация</a>
+                        <Link to='/signup' className='signin__link'>&nbsp;Регистрация</Link>
                     </div>
                 </section>
         </main>

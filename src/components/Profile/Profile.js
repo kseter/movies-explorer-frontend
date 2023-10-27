@@ -3,6 +3,7 @@ import { CurrentUserContext } from '../../context/CurrentUserContext.js';
 import useValidationForm from '../../utils/useValidationForm';
 import { useEffect } from 'react';
 import './Profile.css'
+import { Link } from 'react-router-dom';
 
 const Profile = ({ onUpdateProfileInfo, logOut, isUpdateSuccess, setIsEdit }) => {
 
@@ -34,6 +35,7 @@ const Profile = ({ onUpdateProfileInfo, logOut, isUpdateSuccess, setIsEdit }) =>
                             name='username' 
                             value={values.username ? values.username : ''} 
                             onChange={handleChange}
+                            pattern='[\\\-a-zA-Zа-яёА-ЯЁ ]{2,30}'
                             className={`profile__info-value ${isInputValid.username === undefined 
                                 || isInputValid.username ? '' : 'profile__info-value_invalid'}`}
                             minLength={2}
@@ -45,6 +47,7 @@ const Profile = ({ onUpdateProfileInfo, logOut, isUpdateSuccess, setIsEdit }) =>
                             <input 
                             type='text' 
                             id='profile-email' 
+                            pattern='^[a-zA-Z0-9]+@+[a-zA-Z0-9]+.+[A-z]'
                             name='useremail'
                             value={values.useremail ?  values.useremail : ''}
                             onChange={handleChange} 
@@ -57,7 +60,7 @@ const Profile = ({ onUpdateProfileInfo, logOut, isUpdateSuccess, setIsEdit }) =>
                 className='profile__update-btn'
                 >Редактировать</button> 
                 </form>
-                <a href='/signin' type='button' onClick={logOut} className='profile__logout-btn'>Выйти из аккаунта</a>
+                <Link href='/signin' type='button' onClick={logOut} className='profile__logout-btn'>Выйти из аккаунта</Link>
                 </section>
         </main>
     );
