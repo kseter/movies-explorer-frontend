@@ -85,7 +85,8 @@ const Movies = ({ onSavedBtn, savedMovies, onAdd }) => {
                 isLoading={isLoading}
                 isSearchError={isSearchError}
                 onSavedBtn={onSavedBtn}
-                onAdd={onAdd}/>
+                onAdd={onAdd}
+                />
             </main>
             <Footer />
         </div>

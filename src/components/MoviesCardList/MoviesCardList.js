@@ -38,7 +38,7 @@ const MoviesCardList = ({movies, savedMovies, onDelete, isLoading, isSearchError
     };
 
     useEffect(() => {
-        if(pathname === '/movies') {
+        if(pathname === '/movies' ) {
             setMovieList(showMoviesList().amount)
             function showMoviesListResize() {
                 if(window.innerWidth >= MAX_SCREEN) {
@@ -57,7 +57,7 @@ const MoviesCardList = ({movies, savedMovies, onDelete, isLoading, isSearchError
             window.addEventListener('resize', showMoviesListResize)
             return () => window.removeEventListener('resize', showMoviesListResize )
         }
-    }, [pathname])
+    }, [pathname, movies])
 
     function clickMoreBtn() {
         setMovieList(movieList + showMoviesList().step)
@@ -98,7 +98,7 @@ const MoviesCardList = ({movies, savedMovies, onDelete, isLoading, isSearchError
         } 
                 {pathname === '/movies' && <div className={`movies__btn-container 
                 ${movieList >= movies.length && 'movies__btn-container_hidden'}`}>
-                    <button type='button' onClick={clickMoreBtn} className='movies__more-btn'>Еще</button>
+                <button type='button' onClick={clickMoreBtn} className='movies__more-btn'>Еще</button>
                 </div>}
             </section>
         ); 
