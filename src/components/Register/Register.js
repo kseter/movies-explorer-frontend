@@ -4,14 +4,13 @@ import logoPath from '../../images/logo.svg';
 import useValidationForm from '../../utils/useValidationForm';
 import { Link } from 'react-router-dom';
 
-const Register = ({ onRegister }) => {
+const Register = ({ onRegister, isError }) => {
     const { values, handleChange, isValid, isInputValid, errors } = useValidationForm();
 
     const handleRegisterSubmit = (e) => {
         e.preventDefault();
         onRegister(values.username, values.useremail, values.userpassword);
     };
-
 
     return (
         <main className='signup'>
@@ -51,6 +50,7 @@ const Register = ({ onRegister }) => {
                     placeholder='ivanivanov@mail.com'></input>
                     <span className='signup__error'>{errors.useremail} 
                     {isInputValid.useremail === undefined || isInputValid.useremail ? '' : ' Email должен быть в формате ivanivanov@mail.com'}</span>
+                    { isError && <span className='signup__error'>Эта почта уже занята другим пользователем.</span>}
                     <label className='signup__label'>Пароль</label>
                     <input 
                     onChange={handleChange}  

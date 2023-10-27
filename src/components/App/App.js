@@ -24,6 +24,7 @@ function App() {
   const [loggedIn, setLoggedIn] = useState(false);
   const [isCheckToken, setIsCheckToken] = useState(true);
   const [isUpdateSuccess, setIsUpdateSuccess] = useState(false);
+  const [isError, setIsError] = useState(false)
   const {pathname} = useLocation();
   const navigate = useNavigate();
 
@@ -58,6 +59,7 @@ function updateUserInfo(name, email) {
   })
   .catch((err) => {
     console.error(`Ошибка при редактировании данных пользователя ${err}`)
+    setIsError(true)
 })
 }
 
@@ -110,6 +112,7 @@ function onRegister(name, email, password) {
    return auth.register(name, email, password)
    .then((res) => {
     if(res) {
+      setIsError(false)
       setLoggedIn(false);
       auth.login(email, password)
       .then((res) => {
@@ -125,6 +128,7 @@ function onRegister(name, email, password) {
    })
    .catch((err) => {
     console.error(`Ошибка при регистрации ${err}`)
+    setIsError(true)
   })
 }
 
@@ -157,7 +161,8 @@ function logOut() {
               <Route 
                 path='/signup'
                 element={ loggedIn ? <Navigate to='/movies' replace/>: <Register 
-                onRegister={onRegister}/>}/>
+                onRegister={onRegister}
+                isError={isError}/>}/>
 
                 <Route path='/signin'
                 element={loggedIn ? <Navigate to='/movies' replace/> : <Login 
@@ -174,6 +179,7 @@ function logOut() {
                     onUpdateProfileInfo={updateUserInfo}
                     logOut={logOut}
                     isUpdateSuccess={isUpdateSuccess}
+                    isError={isError}
                     />} exact/>
                 </Route>
 
