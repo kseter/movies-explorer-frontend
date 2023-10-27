@@ -7,9 +7,15 @@ const FilterCheckbox = ({changeShorts, isCheckbox}) => {
     return (
         <section className='checkbox'>
             <label>
-            <input type='checkbox' onChange={() => changeShorts()} className='checkbox__input-invisible'></input>
-            { isCheckbox ? <span className='checkbox__input-visible' checked></span> 
-            : <span className='checkbox__input-visible'></span>}
+            {isCheckbox ? <input type='checkbox' 
+            onChange={() => changeShorts()} 
+            className='checkbox__input-invisible' checked
+            ></input>
+            : <input type='checkbox' 
+            onChange={() => changeShorts()} 
+            className='checkbox__input-invisible'
+            ></input>}
+            <span className='checkbox__input-visible'></span> 
             </label>
             <p className='checkbox__name'>Короткометражки</p>
         </section>

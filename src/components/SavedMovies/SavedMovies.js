@@ -1,5 +1,4 @@
 import React from 'react';
-import FilterCheckbox from '../FilterCheckbox/FilterCheckbox';
 import Footer from '../Footer/Footer';
 import MoviesCardList from '../MoviesCardList/MoviesCardList';
 import SearchForm from '../SearchForm/SearchForm';
@@ -30,13 +29,13 @@ useEffect(() => {
     filter(searchResult, isCheckbox, savedMovies)
 }, [filter, savedMovies, isCheckbox, searchResult])
 
-function changeShorts() {
+function changeShorts(search) {
     if(isCheckbox) {
         setIsCheckbox(false);
-        filter(searchResult, false, savedMovies)
+        filter(search, false, savedMovies)
     } else {
         setIsCheckbox(true);
-        filter(searchResult, true, savedMovies)
+        filter(search, true, savedMovies)
     }
 }
 
@@ -47,11 +46,9 @@ function changeShorts() {
                 savedMovies={savedMovies}
                 searchResult={searchResult}
                 searchMovies={searchMovies}
-                /> 
-                <FilterCheckbox 
                 changeShorts={changeShorts}
                 isCheckbox={isCheckbox}
-                />
+                /> 
                 <MoviesCardList 
                 movies={filteredMovies}
                 onDelete={onDelete}

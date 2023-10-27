@@ -1,5 +1,4 @@
 import './Movies.css'
-import FilterCheckbox from '../FilterCheckbox/FilterCheckbox';
 import MoviesCardList from '../MoviesCardList/MoviesCardList';
 import SearchForm from '../SearchForm/SearchForm';
 import Footer from '../Footer/Footer';
@@ -61,13 +60,13 @@ const Movies = ({ onSavedBtn, savedMovies, onAdd }) => {
         }
     }, [filter]);
      
-    function changeShorts() {
+    function changeShorts(search) {
         if(isCheckbox) {
             setIsCheckbox(false)
-            filter(searchResult, false, movies)
+            filter(search, false, movies)
         } else {
             setIsCheckbox(true)
-            filter(searchResult, true, movies)
+            filter(search, true, movies)
         }
     }
 
@@ -77,8 +76,6 @@ const Movies = ({ onSavedBtn, savedMovies, onAdd }) => {
                 <SearchForm 
                 searchMovies={searchMovies}
                 searchResult={searchResult}
-                />
-                <FilterCheckbox
                 changeShorts={changeShorts} 
                 isCheckbox={isCheckbox}
                 />

@@ -2,8 +2,9 @@ import React, { useEffect } from 'react';
 import useValidationForm from '../../utils/useValidationForm';
 import { useLocation } from 'react-router-dom';
 import './SearchForm.css'
+import FilterCheckbox from '../FilterCheckbox/FilterCheckbox';
 
-const SearchForm = ({savedMovies, searchMovies, searchResult }) => {
+const SearchForm = ({savedMovies, searchMovies, searchResult, changeShorts, isCheckbox }) => {
 
     const pathname = useLocation();
     const { values, handleChange, reset } = useValidationForm();
@@ -29,6 +30,10 @@ const SearchForm = ({savedMovies, searchMovies, searchResult }) => {
         }
     }
 
+    function onChange() {
+        changeShorts(values.search)
+    }
+
         return (
             <section className='search'>
                 <form className='search__form' onSubmit={onSubmit}>
@@ -44,11 +49,13 @@ const SearchForm = ({savedMovies, searchMovies, searchResult }) => {
                 value={values.search || ''} 
                 disabled={savedMovies ? (savedMovies.length === 0 && true) : false}
                 ></input>
-                <button type='submit' className='search__submit-btn'></button>
-                {/* <span className='search__error'></span> если error то показывать */} 
-            
-        </form>
-            </section>
+                <button type='submit' className='search__submit-btn'></button> 
+                </form>
+                <FilterCheckbox 
+                    changeShorts={onChange} 
+                    isCheckbox={isCheckbox}
+                />
+                </section>
         );
 };
 
