@@ -41,7 +41,7 @@ const Register = ({ onRegister, isError }) => {
                     onChange={handleChange}  
                     type='email' 
                     name='useremail'
-                    pattern='^[?:[a-zA-Z0-9]+\\.]+@+[a-zA-Z0-9]+.+[A-z]'
+                    pattern='^[?:[a-zA-Z0-9]+\\.]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+'
                     className={`signup__input ${isInputValid.useremail === undefined 
                         || isInputValid.useremail ? '' : 'signup__input_invalid'}`} 
                     id='useremail' 

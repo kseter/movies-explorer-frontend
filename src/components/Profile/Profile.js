@@ -55,7 +55,7 @@ const Profile = ({ onUpdateProfileInfo, logOut, isUpdateSuccess, isError }) => {
                             <input 
                             type='text' 
                             id='profile-email' 
-                            pattern='^[?:[a-zA-Z0-9]+\\.]+@+[a-zA-Z0-9]+.+[A-z]'
+                            pattern='^[?:[a-zA-Z0-9]+\\.]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+'
                             name='useremail'
                             value={values.useremail ?  values.useremail : ''}
                             onChange={handleChange} 

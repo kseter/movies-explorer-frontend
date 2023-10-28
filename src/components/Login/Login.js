@@ -28,7 +28,7 @@ const Login = ({ onLogin }) => {
                             || isInputValid.useremail ? '' : 'signin__input_invalid'}`}
                         id='useremail' 
                         name='useremail' 
-                        pattern='^[?:[a-zA-Z0-9]+\\.]+@+[a-zA-Z0-9]+.+[A-z]'
+                        pattern='^[?:[a-zA-Z0-9]+\\.]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+'
                         value={values.useremail ?  values.useremail : ''}
                         required 
                         placeholder='Email'></input>
