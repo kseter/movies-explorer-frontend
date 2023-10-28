@@ -6,13 +6,13 @@ import './AuthHeader.css';
 const AuthHeader = () => {
     return (
         <div className='auth-header'>
-            <a href='/' className='auth-header__logo-link'><img src={logoPath} alt='Logo' 
-                className='auth-header__logo'/></a>
+            <Link to='/' className='auth-header__logo-link'><img src={logoPath} alt='Logo' 
+                className='auth-header__logo'/></Link>
                 <div className='auth-header__links'>
                    <Link to='/movies' className='auth-header__link'>Фильмы</Link>
                    <Link to='/saved-movies' className='auth-header__link'>Сохраненные фильмы</Link>
                 </div>
-                <a href='/profile' className='auth-header__account-btn'>Аккаунт</a>
+                <Link to='/profile' className='auth-header__account-btn'>Аккаунт</Link>
                 <div className='auth-header__menu'>
                     <input className='auth-header__menu-input' id="menu" type="checkbox"></input>
                     <label className="auth-header__icon" htmlFor="menu">

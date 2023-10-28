@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Portfolio from '../Portfolio/Portfolio';
 import SectionTitle from '../SectionTitle/SectionTitle';
+import { Link } from "react-router-dom";
 import './AboutMe.css'
 import avatarPath from '../../images/avatar.jpg'
 
@@ -21,7 +22,7 @@ class AboutMe extends Component {
                         С 2015 года работал в компании «СКБ Контур». 
                         После того, как прошёл курс по веб-разработке, 
                         начал заниматься фриланс-заказами и ушёл с постоянной работы.</p>
-                        <a href='https://github.com/kseter' className='about-me__content-link' target='_blank' rel='noreferrer'>Github</a>
+                        <Link to='https://github.com/kseter' className='about-me__content-link' target='_blank' rel='noreferrer'>Github</Link>
                     </article>
                     <img src={avatarPath} alt='Фото' className='about-me__pic'></img>
                 </div>
