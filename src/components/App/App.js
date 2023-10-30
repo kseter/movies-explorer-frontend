@@ -33,8 +33,9 @@ useEffect(() => {
   if(localStorage.jwt) {
     Promise.all([mainApi.getSavedMovies(localStorage.jwt), mainApi.getUserInfo(localStorage.jwt)])
     .then(([savedMovies, user]) => {
-      setSavedMovies(savedMovies.reverse());
+      const ownerMovies = savedMovies.filter(m => m.owner === user._id)
       setCurrentUser(user)
+      setSavedMovies(ownerMovies.reverse())
       setLoggedIn(true);
       setIsCheckToken(false);
     })

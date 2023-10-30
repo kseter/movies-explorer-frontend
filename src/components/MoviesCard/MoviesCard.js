@@ -60,41 +60,6 @@ const MoviesCard = ({movie, onDelete, onSavedBtn, savedMovies, onAdd}) => {
             </div>
                 </div>
         </li>
-
-
-
-
-        //     <li className='card'>
-        //         {!isSaved && <div className='card__container'>
-        //             <div className='card__pic-container'>
-        //             <button type='button' onClick={handleSaveBtnClick} className={`card__save-btn ${isMovieAdded && 'card__save-btn_inactive'} `}>Сохранить</button>
-        //             <img src={`https://api.nomoreparties.co${movie.image.url}`} alt='Изображение фильма' className='card__pic'></img>
-        //             <button type='button' onClick={handleSaveBtnClick} className={`card__saved-btn ${isMovieAdded && 'card__save-btn_active'}`}>
-        //             <div className='card__icon-saved'></div></button>
-        //             {deleteBtn && <button type='button' className='card__delete-btn'>
-        //             <div className='card__icon-delete'></div></button>}
-        //     </div>
-        //     <div className='card__container-text'>
-        //         <p className='card__name'>{movie.nameRU}</p>
-        //         <div className='card__info-container'>
-        //             <p className='card__duration'>{movie.duration}</p>
-        //         </div>
-        //     </div>
-        //         </div>}
-        //         {isSaved && <div className='card__container_saved'>
-        //         <div className='card__pic-container'>
-        //         <img src={savedMovies.image} alt='Изображение фильма' className='card__pic'></img>
-        //         <button type='button' className='card__delete-btn'>
-        //         <div className='card__icon-delete'></div></button>
-        //     </div>
-        //     <div className='card__container-text'>
-        //         <p className='card__name'>{savedMovies.nameRU}</p>
-        //         <div className='card__info-container'>
-        //             <p className='card__duration'>{savedMovies.duration}</p>
-        //         </div>
-        //     </div>
-        //         </div>}
-        // </li>
         
         );
 };

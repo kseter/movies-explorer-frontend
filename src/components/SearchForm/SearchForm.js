@@ -23,9 +23,7 @@ const SearchForm = ({savedMovies, searchMovies, searchResult, changeShorts, isCh
         evt.preventDefault()
         if(evt.target.search.value) {
             searchMovies(evt.target.search.value)
-            //setiserror
         } else {
-            //setiserror 
             console.log('trouble')
         }
     }
@@ -42,7 +40,6 @@ const SearchForm = ({savedMovies, searchMovies, searchResult, changeShorts, isCh
                 name='search'
                 onChange={(evt) => {
                     handleChange(evt)
-                    //erroe false 
                 }} 
                 className='search__input' 
                 placeholder='Фильм' 
